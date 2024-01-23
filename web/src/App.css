@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  
+}
+.App img{
+  width: 400px;
+  height: 400px;
+}
+
+.mau{
+  background-color: blue;
+}
+.mau p{
+  font-size: 24px;
+  text-decoration: overline;
+}
+.mau h1{
+  text-transform: uppercase;
+  color: rgb(150, 9, 9);
+  text-shadow: 4px 1px 8px;
+  transform: scale(1.3);
+}
+.mau button:hover{
+background-color: chocolate;
+transform: scale(1.3);
+
+}
