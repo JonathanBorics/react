@@ -19,6 +19,11 @@
   color: rgb(150, 9, 9);
   text-shadow: 4px 1px 8px;
   transform: scale(1.3);
+  border: 3px solid;
+  width: 200px;
+  position: relative;
+  left: 200px;
+  top: 10px;
 }
 .mau button:hover{
 background-color: chocolate;
