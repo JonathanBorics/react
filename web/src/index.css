@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ body{
+  background-color: hsl(0, 5%, 20%);
+ margin: 0;
+ 
+ }
+ 
+ .car {
+  display: flex;
+  flex-wrap: wrap;
+}
+ .cards{
+  
+  background-color: hsl(0, 37%, 28%);
+  width: 250px;
+  height: 280px;
+  margin-top: 5px;
+  margin-right: 7px;
+  margin-bottom: 3px;
+  text-align: center;
+  border: 1px solid;
+  border-color: rgb(126, 85, 82);
+  border-radius: 15px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.9); 
+
+  
+}
+.cards:hover{
+  transform: scale(1.01);
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cards img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  
+}
+
+.cards p{
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align:center;
+  margin: 0;
+}
+.navi {
+  background-color: black;
+  color: rgb(224, 13, 13);
+  
+  width: 100%; /* Százalékos szélesség */
+  height: 90px;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+.navi h1{
+  margin: 0;
+  text-transform: uppercase;
+  color: rgb(206, 8, 8);
+  text-shadow: 0  0 4px rgba(250, 0, 0, 0.7);
+}
+
+.navi ul {
+  list-style-type: none; /* lista stílus kikapcsolása */
+  margin: 0;
+  padding: 0;
+}
+
+.navi ul li {
+  display: inline; /* elemek egymás mellett */
+}
+
+.navi ul li a {
+  text-decoration: none; /* aláhúzás eltávolítása */
+  color: rgb(206, 8, 8);
+  text-shadow: 0  0 4px rgba(250, 0, 0, 0.7); /* alapértelmezett szövegszín */
+  padding: 8px 16px; /* padding a link körül */
+  display: inline-block; /* blokk szintre helyezés, hogy lehetséges legyen a hover hatás */
+}
+
+.navi ul li a:hover {
+  background-color: rgb(148, 15, 15); 
+  color: black; 
+}
+.price{
+  position: relative;
+  top: 10px;
+ background-color: hsl(0, 0%, 0%);
+ color: bisque;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px;
+ 
+  
 }
