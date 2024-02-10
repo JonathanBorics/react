@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; 
 
-function Foodscard() {
+function Foodscard({showFood,setShowFood}) {
   const [products, setProducts] = useState([
     { name: 'Cheese Burger', price: '6$', image: './pic/burger1.jpg' },
   { name: 'Chicken Burger Deluxe', price: '8$', image: './pic/burger2.jpg' },
@@ -25,7 +25,8 @@ function Foodscard() {
   ]);
 
   return (
-    <div className='car'>
+    <>
+  {showFood &&  <div className='car'>
       {products.map((product, index) => (
         <div className='cards' key={index}>
           <img src={product.image} alt={product.name} />
@@ -33,7 +34,10 @@ function Foodscard() {
           <span className="price">{product.price}</span>
         </div>
       ))}
-    </div>
+       <button onClick={()=>{setShowFood(!showFood)}}>itt is be lehet csukni</button>
+
+    </div>}
+          </>
   );
 }
 

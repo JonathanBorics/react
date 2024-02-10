@@ -1,19 +1,27 @@
 
 import './App.css';
-import Foodscard  from './foods';
-import Navbar  from './navbar';
-import AboutUs from './aboutus';
+import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
+import Home  from './components/Home/Home';
+import Navbar  from './components/Navbar/navbar';
+import AboutUs from './components/About/aboutus';
+import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
 
 function App  () {
 
 
   return (
-    
-         <div className='car'>
-          <Navbar/>
-       <Foodscard/>
-       <AboutUs/>
-
+    <div>
+    <Router>
+    <Navbar></Navbar>
+<Routes>
+      <Route path="/aboutus" element={<AboutUs/>} />
+      <Route path="/" element={<Home/>} />
+        <Route path="/contact" element={<Contact/>} />
+        </Routes>
+        <Footer></Footer>
+  </Router>
+ 
     </div>
 
   );
