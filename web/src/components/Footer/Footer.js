@@ -1,7 +1,8 @@
+import "./footer.css" 
 import React from 'react'
 
 export default function Footer() {
   return (
-    <div style={{backgroundColor:"pink"}}>ez egy footer</div>
+    <div className="footer">ez egy footer</div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; 
 
 function Foodscard({showFood,setShowFood}) {
+  
   const [products, setProducts] = useState([
     { name: 'Cheese Burger', price: '6$', image: './pic/burger1.jpg' },
   { name: 'Chicken Burger Deluxe', price: '8$', image: './pic/burger2.jpg' },
@@ -34,9 +35,9 @@ function Foodscard({showFood,setShowFood}) {
           <span className="price">{product.price}</span>
         </div>
       ))}
-       <button onClick={()=>{setShowFood(!showFood)}}>itt is be lehet csukni</button>
 
     </div>}
+    <button onClick={()=>{setShowFood(!showFood)}}>itt is be lehet csukni</button>
           </>
   );
 }

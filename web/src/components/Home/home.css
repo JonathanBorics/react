@@ -1,0 +1,13 @@
+.p{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    padding: 5px;
+   font-size: 18px;
+   text-transform: uppercase;
+   
+}
+.p:hover{
+    color: rgb(241, 102, 102);
+    cursor: pointer;
+}
