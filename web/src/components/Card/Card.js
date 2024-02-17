@@ -14,20 +14,23 @@
 //     </div>
 //   )
 // }
-
+import "../../App.css"
 import React from 'react'
-import"./Card.css" 
 import Eloetel from './eloetel'
 import Foetel from './Foetel'
 import Deszert from './Deszert'
 export default function Card({menu}) {
   return (
+    
+   
     <div className='unique-card'>
-        <p> menu neve {menu.nev}</p>
+        <h2> {menu.nev}</h2>
        <Eloetel menu={menu}></Eloetel>
        <Foetel menu={menu}></Foetel>
        <Deszert menu={menu} ></Deszert>
         <p>{menu.ar}</p>
     </div>
+    
+    
   )
 }

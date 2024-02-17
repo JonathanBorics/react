@@ -1,12 +1,9 @@
 import React from 'react'
-import Contact from '../Contact/Contact'
-import { useState } from 'react'
 import RestaurantCard from './RestaurantCard'
 export default function Restaurant({menu}) {
 
-const [muti,setmuti]=useState(false);
 
-const [showEmployees, setShowEmployees] = useState(false);
+
 
 const restaurant0 = {
     kep: "./pic/res1.jpg",
@@ -49,7 +46,44 @@ const restaurant0 = {
             szakterulet: "Gourmet pizzák, kreatív feltétek",
             tapasztalat: 4,
         }
-    ]
+    ],
+
+    Rendezvények: [
+        {
+          Férőhely: "Maximum 100 fő részére",
+          Kínáltlehetőségek: {
+            Esküvők: {
+              Esküvőimenü: "Háromfogásos, összeállítható menük választhatók, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Italcsomagok: "Különböző italcsomagok állnak rendelkezésre, melyek tartalmazzák a pezsgőt, bort és üdítőket.",
+              Dekoráció: "Esküvői dekorációk biztosítása az étterem részéről.",
+              Hangésfénytechnika: "Professzionális hang- és fénytechnikai eszközök biztosítása a rendezvényhez."
+            },
+            Születésnapok: {
+              Születésnapimenü: "Választható menük különböző fogásokkal, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Torta: "Egyedi torták rendelhetők különböző méretekben és ízekben.",
+              Italcsomagok: "Születésnapi italcsomagok, melyek tartalmazzák az üdítőket és pezsgőt."
+            }
+          },
+          Árak: {
+            Esküvőkesetében: "Árajánlat egyedi elképzelések alapján, kérjen árajánlatot.",
+            Születésnapokesetében: "Árajánlat egyedi igények alapján, kérjen árajánlatot."
+          },
+          Főbbjellemzők: [
+            "Külön terem bérelhető",
+            "Személyre szabott menük",
+            "Professzionális szolgáltatás és kiszolgálás",
+            "Hangulatos, elegáns környezet",
+            "Rugalmas foglalási feltételek"
+          ]
+        }
+     ]
+
+
+
+
+
+
+
 };
 const restaurant1 = {
     kep: "./pic/res2.jpg",
@@ -92,7 +126,42 @@ const restaurant1 = {
             szakterulet: "Gourmet pizzák, kreatív feltétek",
             tapasztalat: 4,
         }
-    ]
+    ],
+
+    Rendezvények: [
+        {
+          Férőhely: "Maximum 100 fő részére",
+          Kínáltlehetőségek: {
+            Esküvők: {
+              Esküvőimenü: "Háromfogásos, összeállítható menük választhatók, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Italcsomagok: "Különböző italcsomagok állnak rendelkezésre, melyek tartalmazzák a pezsgőt, bort és üdítőket.",
+              Dekoráció: "Esküvői dekorációk biztosítása az étterem részéről.",
+              Hangésfénytechnika: "Professzionális hang- és fénytechnikai eszközök biztosítása a rendezvényhez."
+            },
+            Születésnapok: {
+              Születésnapimenü: "Választható menük különböző fogásokkal, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Torta: "Egyedi torták rendelhetők különböző méretekben és ízekben.",
+              Italcsomagok: "Születésnapi italcsomagok, melyek tartalmazzák az üdítőket és pezsgőt."
+            }
+          },
+          Árak: {
+            Esküvőkesetében: "Árajánlat egyedi elképzelések alapján, kérjen árajánlatot.",
+            Születésnapokesetében: "Árajánlat egyedi igények alapján, kérjen árajánlatot."
+          },
+          Főbbjellemzők: [
+            "Külön terem bérelhető",
+            "Személyre szabott menük",
+            "Professzionális szolgáltatás és kiszolgálás",
+            "Hangulatos, elegáns környezet",
+            "Rugalmas foglalási feltételek"
+          ]
+        }
+     ]
+
+
+
+
+
 };
    
 const restaurant2 = {
@@ -136,7 +205,43 @@ const restaurant2 = {
             szakterulet: "Gourmet pizzák, kreatív feltétek",
             tapasztalat: 4,
         }
-    ]
+    ],
+
+    Rendezvények: [
+        {
+          Férőhely: "Maximum 100 fő részére",
+          Kínáltlehetőségek: {
+            Esküvők: {
+              Esküvőimenü: "Háromfogásos, összeállítható menük választhatók, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Italcsomagok: "Különböző italcsomagok állnak rendelkezésre, melyek tartalmazzák a pezsgőt, bort és üdítőket.",
+              Dekoráció: "Esküvői dekorációk biztosítása az étterem részéről.",
+              Hangésfénytechnika: "Professzionális hang- és fénytechnikai eszközök biztosítása a rendezvényhez."
+            },
+            Születésnapok: {
+              Születésnapimenü: "Választható menük különböző fogásokkal, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Torta: "Egyedi torták rendelhetők különböző méretekben és ízekben.",
+              Italcsomagok: "Születésnapi italcsomagok, melyek tartalmazzák az üdítőket és pezsgőt."
+            }
+          },
+          Árak: {
+            Esküvőkesetében: "Árajánlat egyedi elképzelések alapján, kérjen árajánlatot.",
+            Születésnapokesetében: "Árajánlat egyedi igények alapján, kérjen árajánlatot."
+          },
+          Főbbjellemzők: [
+            "Külön terem bérelhető",
+            "Személyre szabott menük",
+            "Professzionális szolgáltatás és kiszolgálás",
+            "Hangulatos, elegáns környezet",
+            "Rugalmas foglalási feltételek"
+          ]
+        }
+     ]
+
+
+
+
+
+
 };
    
 const restaurant3 = {
@@ -180,34 +285,53 @@ const restaurant3 = {
             szakterulet: "Gourmet pizzák, kreatív feltétek",
             tapasztalat: 4,
         }
-    ]
+    ],
+    Rendezvények: [
+        {
+          Férőhely: "Maximum 100 fő részére",
+          Kínáltlehetőségek: {
+            Esküvők: {
+              Esküvőimenü: "Háromfogásos, összeállítható menük választhatók, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Italcsomagok: "Különböző italcsomagok állnak rendelkezésre, melyek tartalmazzák a pezsgőt, bort és üdítőket.",
+              Dekoráció: "Esküvői dekorációk biztosítása az étterem részéről.",
+              Hangésfénytechnika: "Professzionális hang- és fénytechnikai eszközök biztosítása a rendezvényhez."
+            },
+            Születésnapok: {
+              Születésnapimenü: "Választható menük különböző fogásokkal, melyek tartalmazzák az előételt, főételt és desszertet.",
+              Torta: "Egyedi torták rendelhetők különböző méretekben és ízekben.",
+              Italcsomagok: "Születésnapi italcsomagok, melyek tartalmazzák az üdítőket és pezsgőt."
+            }
+          },
+          Árak: {
+            Esküvőkesetében: "Árajánlat egyedi elképzelések alapján, kérjen árajánlatot.",
+            Születésnapokesetében: "Árajánlat egyedi igények alapján, kérjen árajánlatot."
+          },
+          Főbbjellemzők: [
+            "Külön terem bérelhető",
+            "Személyre szabott menük",
+            "Professzionális szolgáltatás és kiszolgálás",
+            "Hangulatos, elegáns környezet",
+            "Rugalmas foglalási feltételek"
+          ]
+        }
+     ]
+
 };
    
 const lista=[restaurant0,restaurant1,restaurant2,restaurant3];
 
 
-
   return (
     
-    <div >
+    <div className='car' >
     
     
-
-
-{lista.map((menuElem)=> (<RestaurantCard menu={menuElem}></RestaurantCard>))}
-
-
-    <button  onClick={()=> setmuti(!muti)}>Menuk</button>
-    {muti &&<Contact menu={menu}> </Contact>}<br></br><br></br>
-    <RestaurantCard menu={restaurant0}></RestaurantCard>
-
-
-
+           {lista.map((menuElem)=> (<RestaurantCard menuu={menuElem}></RestaurantCard>))}
 
     </div>
     
   )
-}
+  }
 
 
 

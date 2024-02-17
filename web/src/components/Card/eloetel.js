@@ -12,8 +12,8 @@ import React from 'react'
 
 export default function Eloetel({menu}) {
   return (
-    <div>
-<p >eloetel {menu.eloetel}</p>
+    <div >
+    <p >eloetel {menu.eloetel}</p>
     </div>
   )
 }

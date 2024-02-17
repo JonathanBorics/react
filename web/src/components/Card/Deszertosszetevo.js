@@ -21,7 +21,7 @@ export default function Deszertosszetevo({menu}) {
     <div>
 
        {deszert && <p >deszertosszetevo: {menu.deszertosszetevok}</p>}
-        <button  onClick={()=> setDeszert(!deszert)}>click me</button>
+        <p className='osszetevok' onClick={()=> setDeszert(!deszert)}>Osszetevok:</p>
     </div>
   )
 }

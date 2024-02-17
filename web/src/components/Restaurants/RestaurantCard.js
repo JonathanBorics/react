@@ -1,39 +1,53 @@
 import React from 'react'
 import"./restaurantCard.css" 
 import { useState } from 'react';
-export default function RestaurantCard({menu}) {
+import Contact from '../Contact/Contact';
+import Rendezvenyek from './Rendezvenyek';
+import Employees from './Employees';
+import NamestreetPic from './NamestreetPic';
+import "../../App.css"
+
+
+
+export default function RestaurantCard({menuu }) {
+
 
   const [showEmployees, setShowEmployees] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showEvents, setShowEvents] = useState(false);
   return (
   <div className='back'>
   <div className='ress-card'>
 
 
-          <h2>{menu.nev}</h2>
-          <p>Cím: {menu.cim}</p>
-          <img src={menu.kep} className='kep'></img>    
-          <h3>Alkalmazottak:</h3>
-          <button className='button' onClick={() => setShowEmployees(!showEmployees)}>Munkatársak</button>
-
-            {showEmployees &&  <ul>
-              {menu.alkalmazottak.map((employee, index) => (
-              <li key={index}>
-              <h4>{employee.nev}</h4>
-              <p>Beosztás: {employee.beosztas}</p>
-              <p>Szakterület: {employee.szakterulet}</p>
-              <p>Tapasztalat: {employee.tapasztalat} év</p>
-              </li>
-                ))}
-              </ul>}
+    <NamestreetPic menuu={menuu}></NamestreetPic>
 
 
+  
+    <div className='button-container'>
+          <p className={`button ${showEmployees && 'active'}`} onClick={() => {
+            setShowEmployees(!showEmployees);
+            setShowMenu(false);
+            setShowEvents(false);
+          }}>Munkatársak</p>
 
-        
+          <p className={`button ${showMenu && 'active'}`} onClick={() => {
+            setShowMenu(!showMenu);
+            setShowEmployees(false);
+            setShowEvents(false);
+          }}>Menuk</p>
 
+          <p className={`button ${showEvents && 'active'}`} onClick={() => {
+            setShowEvents(!showEvents);
+            setShowEmployees(false);
+            setShowMenu(false);
+          }}>Rendezvenyek</p>
+        </div>
 
-
-
-    </div>
+        {showEmployees && <Employees menuu={menuu}></Employees>}
+        {showMenu && <Contact menuu={menuu}></Contact>}
+        {showEvents && <Rendezvenyek menuu={menuu}></Rendezvenyek>}
+      </div>
     </div>
 
   )

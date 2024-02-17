@@ -1,32 +1,226 @@
-.App {
-  text-align: center;
+body {
+   margin: 0;
+   background-color: #2e0808;
   
 }
-.App img{
-  width: 400px;
+/* about start*/
+.about{
+  color: #996262;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about h2 {
+  text-align: center;
+}
+.about-image{
+  width: 600px;
+}
+/* about end*/
+
+
+/* Foods start */
+.cards {
+  text-align: center;
+  background-color: #2e0808;
+  border: 1px solid #4b3737;
+  border-radius: 15px;
+  width: 22%;
   height: 400px;
-}
-
-.mau{
-  background-color: blue;
-}
-.mau p{
+  padding: 10px;
+  color: #996262;
   font-size: 24px;
-  text-decoration: overline;
+  font-weight: bold;
+ transition: all 0.2s ease-in-out;
+  
+  margin-right: 10px; 
+  margin-bottom: 10px; }
+
+
+  .cards:hover{
+transform: scale(1.01);
+background-color: rgb(29, 5, 5);
+color: antiquewhite;
+  }
+
+
+
+ .kep {
+    width: 90%;
+    height: 70%;
+    border-radius: 35px;
 }
-.mau h1{
-  text-transform: uppercase;
-  color: rgb(150, 9, 9);
-  text-shadow: 4px 1px 8px;
-  transform: scale(1.3);
-  border: 3px solid;
-  width: 200px;
-  position: relative;
-  left: 200px;
-  top: 10px;
-}
-.mau button:hover{
-background-color: chocolate;
-transform: scale(1.3);
+.car{
+  
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
 
 }
+/* Foods end */
+
+
+/* Menu start */
+
+
+
+
+
+.unique-card{
+  text-align: center;
+  background-color: #2e0808;
+  border:1px solid #a17d7d;
+  border-radius: 15px;
+  width: 38%;
+  padding: 15px;
+  
+  color: #996262;
+  font-size: 20px;
+  font-weight: bold;
+ transition: all 0.2s ease-in-out;
+  
+  margin-bottom: 10px;
+
+}
+
+.unique-card:hover{
+  transform: scale(1.01);
+  background-color: rgb(29, 5, 5);
+  color: antiquewhite;
+    }
+
+/* Menu end */
+
+/* Restaurant start */
+
+
+.back {
+  text-align: center;
+
+  background-color: #2e0808;
+  border: 1px solid #4b3737;
+  border-radius: 15px;
+  width: 29%;
+  
+  padding: 2px;
+  color: #996262;
+  font-size: 24px;
+  font-weight: bold;
+ transition: all 0.2s ease-in-out;
+ 
+  
+  margin-bottom: 10px; }
+
+
+
+
+
+
+
+
+
+  .back:hover{
+transform: scale(1.01);
+background-color: rgb(29, 5, 5);
+color: antiquewhite;
+  }
+
+  .restaurant-kep  {
+    width: 80%;
+    height:19.2rem;
+    border-radius: 15px;
+}
+
+
+
+
+/* Restaurant end */
+
+.munkatarsak ul{
+margin: 0;
+  padding: 0;
+}
+
+
+.munkatarsak  li{
+  
+  list-style-type: none;
+  border:1px solid #a17d7d;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+
+}
+
+/* rendezveny */
+
+.rendezveny ul{
+
+  list-style-type: none;
+  padding: 0;
+
+}
+.rendezveny li{
+
+  list-style-type: none;
+  border:1px solid #a17d7d;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+
+}
+
+.cimek{
+  border:1px solid #984949;
+  border-radius: 10px;
+background-color: #5b2d2d;
+
+
+}
+
+
+
+
+
+/* rendezveny */
+
+.button:hover{
+  background-color: #984949;
+cursor: pointer;
+  border: 1px solid rgb(255, 253, 253);
+border-radius: 15px;
+transition: background-color 0.3s, color 0.3s; /* Animáció a hover hatásra */
+padding: 3px 5px;
+
+}
+
+/* Ha a képernyő szélessége 768 pixelnél kisebb (tablet méret) */
+@media (max-width: 768px) {
+  .cards {
+    width: 45%; /* Csökkentjük a kártyák szélességét */
+    height: auto; /* Engedjük, hogy a kártyák magassága automatikusan változzon */
+  }
+
+  .unique-card {
+    width: 90%; /* Csökkentjük a menük szélességét */
+  }
+
+  .back {
+    width: 80%; /* Csökkentjük a restaurant rész szélességét */
+  }
+
+  .restaurant-kep {
+    width: 100%; /* Teljes szélességre állítjuk a képet */
+    height: auto; /* Engedjük, hogy a kép magassága automatikusan változzon */
+  }
+}
+
+/* Ha a képernyő szélessége 480 pixelnél kisebb (mobil méret) */
+@media (max-width: 480px) {
+  .cards, .unique-card, .back {
+    width: 100%; /* A kártyák, menük és restaurant rész teljes szélességet kapnak */
+  }
+}
+
+

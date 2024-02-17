@@ -1,11 +1,14 @@
-
+/* 
 .back{
-
-
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+   
+
+
 }
+
+
+
 
 
 
@@ -20,26 +23,34 @@
     font-size: 18px;
     font-weight: bold;
     transition: all 0.2s ease-in-out;
-    margin-right: 10px; /* Vízszintes távolság a kártyák között */
-    margin-bottom: 10px; /* Függőleges távolság az egyes sorok között */
+    margin-right: 10px; 
+    margin-bottom: 10px; 
 }
 
 .ress-card:hover {
     background-color: #1a0404;
-    color: #8b8b8b;
-    transform: scale(1.05);
+    color: antiquewhite;
+    transform: scale(1.01);
     cursor: pointer;
 }
 
 .ress-card h2 {
-    margin-bottom: 10px; /* Cím alatti távolság */
+    margin-bottom: 10px; 
 }
 
 .ress-card p {
-    margin-bottom: 5px; /* Paragrafusok közötti távolság */
+    margin-bottom: 5px;
 }
 
 .ress-card img.kep {
     width: 90%;
     border-radius: 15px;
 }
+.button:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:antiquewhite;
+    color: #1a0404;
+
+
+} */

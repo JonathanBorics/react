@@ -1,44 +1,56 @@
-import React, { useEffect } from 'react'
 import Card from '../Card/Card'
-
+import "../../App.css"
 export default function Contact() {
 
  
   
   const menu0={
-    nev:"csirke menu ",
-   ar:"500din",
-   eloetel:" csirke leves",
-   foetel:" csirkes cheesburger",
-   deszert:"szilvas gomboc ",
-   deszertosszetevok:"csoki,slag,szilva"
+    nev:"Mediterrán Menü",
+    eloetel:" Caprese Saláta (mozzarella, paradicsom, bazsalikom, olívaolaj)",
+    foetel:" Lazacos Penne Pestoval (friss lazac, penne tészta, pesto szósz)",
+    deszert:"Tiramisu  ",
+    deszertosszetevok:"(mascarpone krém, kávé áztatott piskóta, kakaópor)",
+    ar:"890din",
   }
 const menu1={
-  nev:"gulas menu",
-   ar:"400din",
-   eloetel:"kaposzta",
-   foetel:"gulas",
-   deszert:"palacsinta",
-   deszertosszetevok:"meggy,csoki,plazma"
+  nev:"Vegetáriánus Menü",
+  eloetel:"Grillezett Zöldség Tál (padlizsán, cukkini, paprika, paradicsom)",
+  foetel:"Quinoa Burgonyapürével (quinoa, sült burgonya, friss zöldségek)",
+  deszert:"Gyümölcsös Jogurt",
+  deszertosszetevok:"(friss gyümölcsök, natúr joghurt, méz)",
+  ar:"900din",
 }
 const menu2={
-   nev:"hamburger menu ",
-   ar:"200din",
-   eloetel:"leves",
-   foetel:"cheesburger",
-   deszert:"torta",
-   deszertosszetevok:"meggy,csoki"
+   nev:"Ázsiai Menü",
+   eloetel:"Vegán Tavaszi Tekercs (rizslap, friss zöldségek, tofu, mártás)",
+   foetel:"Csirkés Csípős Pad Thai (csirkemell, rizstészta, zöldségek, csípős szósz)",
+   deszert:"Mangós Rizsfelfújt",
+   deszertosszetevok:"(rizs, mangó, kókusztej, vanília)",
+   ar:"980din",
+}
+const menu3={
+  nev:"Ázsiai Menü",
+  eloetel:"Vegán Tavaszi Tekercs (rizslap, friss zöldségek, tofu, mártás)",
+  foetel:"Csirkés Csípős Pad Thai (csirkemell, rizstészta, zöldségek, csípős szósz)",
+  deszert:"Mangós Rizsfelfújt",
+  deszertosszetevok:"(rizs, mangó, kókusztej, vanília)",
+  ar:"980din",
 }
 
-const menuLista = [menu0, menu1, menu2]
+const menu4={
+  nev:"Ázsiai Menü",
+  eloetel:"Vegán Tavaszi Tekercs (rizslap, friss zöldségek, tofu, mártás)",
+  foetel:"Csirkés Csípős Pad Thai (csirkemell, rizstészta, zöldségek, csípős szósz)",
+  deszert:"Mangós Rizsfelfújt",
+  deszertosszetevok:"(rizs, mangó, kókusztej, vanília)",
+  ar:"980din",
+}
+const menuLista = [menu0, menu1, menu2,menu3,menu4]
   return (
-    <div style={{display:"flex", flexDirection:"row"}}>
-    {/* <Card nev={"hambureg" }  ar={"ar1"} eloetel={"leves"} foetel={"cheesburger"} deszert={"torta"} deszertosszetevo={"meggy,csoki"} ></Card> */}
-   {/* <Card menu={menu2}></Card>
-   <Card menu={menu1}></Card>
-   <Card menu={menu0}></Card> */}
+    <div className='car' >
+   
    {menuLista.map((menuElem)=> (<Card menu={menuElem}></Card>))}
-    
+  
     </div>
   )
 }

@@ -18,7 +18,7 @@ import Deszertosszetevo from './Deszertosszetevo'
 
 export default function Deszert({menu}) {
   return (
-    <div style={{border:"1px solid green", backgroundColor:"black"}}>
+    <div >
 
 
         <p>deszert {menu.deszert}

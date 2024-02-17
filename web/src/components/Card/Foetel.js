@@ -13,8 +13,8 @@ import React from 'react'
 
 export default function Foetel({menu}) {
   return (
-    <div>
-<p>Foetel {menu.foetel}</p>
+    <div  >
+    <p>Foetel {menu.foetel}</p>
 
 
     </div>
