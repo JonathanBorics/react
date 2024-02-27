@@ -1,9 +1,6 @@
 import React from 'react'
 import RestaurantCard from './RestaurantCard'
-export default function Restaurant({menu}) {
-
-
-
+export default function Restaurant() {
 
 const restaurant0 = {
     kep: "./pic/res1.jpg",

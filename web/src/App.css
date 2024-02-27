@@ -1,23 +1,21 @@
 body {
-   margin: 0;
-   background-color: #2e0808;
-  
+  margin: 0;
+  background-color: #2e0808;
 }
 /* about start*/
-.about{
+.about {
   color: #996262;
   font-size: 22px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .about h2 {
   text-align: center;
 }
-.about-image{
+.about-image {
   width: 600px;
 }
 /* about end*/
-
 
 /* Foods start */
 .cards {
@@ -31,69 +29,57 @@ body {
   color: #996262;
   font-size: 24px;
   font-weight: bold;
- transition: all 0.2s ease-in-out;
-  
-  margin-right: 10px; 
-  margin-bottom: 10px; }
+  transition: all 0.2s ease-in-out;
 
-
-  .cards:hover{
-transform: scale(1.01);
-background-color: rgb(29, 5, 5);
-color: antiquewhite;
-  }
-
-
-
- .kep {
-    width: 90%;
-    height: 70%;
-    border-radius: 35px;
-}
-.car{
-  
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-
-
-}
-/* Foods end */
-
-
-/* Menu start */
-
-
-
-
-
-.unique-card{
-  text-align: center;
-  background-color: #2e0808;
-  border:1px solid #a17d7d;
-  border-radius: 15px;
-  width: 38%;
-  padding: 15px;
-  
-  color: #996262;
-  font-size: 20px;
-  font-weight: bold;
- transition: all 0.2s ease-in-out;
-  
+  margin-right: 10px;
   margin-bottom: 10px;
-
 }
 
-.unique-card:hover{
+.cards:hover {
   transform: scale(1.01);
   background-color: rgb(29, 5, 5);
   color: antiquewhite;
-    }
+}
+
+.kep {
+  width: 90%;
+  height: 70%;
+  border-radius: 35px;
+}
+.car {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* Foods end */
+
+/* Menu start */
+
+.unique-card {
+  text-align: center;
+  background-color: #2e0808;
+  border: 1px solid #a17d7d;
+  border-radius: 15px;
+  width: 38%;
+  padding: 15px;
+
+  color: #996262;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+
+  margin-bottom: 10px;
+}
+
+.unique-card:hover {
+  transform: scale(1.01);
+  background-color: rgb(29, 5, 5);
+  color: antiquewhite;
+}
 
 /* Menu end */
 
 /* Restaurant start */
-
 
 .back {
   text-align: center;
@@ -102,97 +88,98 @@ justify-content: space-evenly;
   border: 1px solid #4b3737;
   border-radius: 15px;
   width: 29%;
-  
+
   padding: 2px;
   color: #996262;
   font-size: 24px;
   font-weight: bold;
- transition: all 0.2s ease-in-out;
- 
-  
-  margin-bottom: 10px; }
+  transition: all 0.2s ease-in-out;
 
-
-
-
-
-
-
-
-
-  .back:hover{
-transform: scale(1.01);
-background-color: rgb(29, 5, 5);
-color: antiquewhite;
-  }
-
-  .restaurant-kep  {
-    width: 80%;
-    height:19.2rem;
-    border-radius: 15px;
+  margin-bottom: 10px;
 }
 
+.back:hover {
+  transform: scale(1.01);
+  background-color: rgb(29, 5, 5);
+  color: antiquewhite;
+}
 
-
+.restaurant-kep {
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+}
 
 /* Restaurant end */
 
-.munkatarsak ul{
-margin: 0;
+.munkatarsak ul {
+  margin: 0;
   padding: 0;
 }
 
-
-.munkatarsak  li{
-  
+.munkatarsak li {
   list-style-type: none;
-  border:1px solid #a17d7d;
+  border: 1px solid #a17d7d;
   border-radius: 10px;
   margin-bottom: 10px;
   justify-content: space-around;
-
 }
 
 /* rendezveny */
 
-.rendezveny ul{
-
+.rendezveny ul {
   list-style-type: none;
   padding: 0;
-
 }
-.rendezveny li{
-
+.rendezveny li {
   list-style-type: none;
-  border:1px solid #a17d7d;
+  border: 1px solid #a17d7d;
   border-radius: 10px;
   margin-bottom: 20px;
   justify-content: space-around;
-
 }
 
-.cimek{
-  border:1px solid #984949;
+.cimek {
+  border: 1px solid #984949;
   border-radius: 10px;
-background-color: #5b2d2d;
-
-
+  background-color: #5b2d2d;
 }
-
-
-
-
 
 /* rendezveny */
 
-.button:hover{
+.button:hover {
   background-color: #984949;
-cursor: pointer;
+  cursor: pointer;
   border: 1px solid rgb(255, 253, 253);
-border-radius: 15px;
-transition: background-color 0.3s, color 0.3s; /* Animáció a hover hatásra */
-padding: 3px 5px;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s; /* Animáció a hover hatásra */
+  padding: 3px 5px;
+}
 
+.cardss {
+  text-align: center;
+
+  background-color: #2e0808;
+  border: 1px solid #4b3737;
+  border-radius: 15px;
+  width: 100%;
+
+  padding: 2px;
+  color: #996262;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+
+  margin-bottom: 10px;
+}
+
+.cardss:hover {
+  transform: scale(1.01);
+  background-color: rgb(29, 5, 5);
+  color: antiquewhite;
+}
+.backcard {
+  width: 50%;
 }
 
 /* Ha a képernyő szélessége 768 pixelnél kisebb (tablet méret) */
@@ -218,9 +205,9 @@ padding: 3px 5px;
 
 /* Ha a képernyő szélessége 480 pixelnél kisebb (mobil méret) */
 @media (max-width: 480px) {
-  .cards, .unique-card, .back {
+  .cards,
+  .unique-card,
+  .back {
     width: 100%; /* A kártyák, menük és restaurant rész teljes szélességet kapnak */
   }
 }
-
-
