@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import Restaurant from "./components/Restaurants/Restaurant";
 import APi from "./components/Api/APi";
+import Post from "./components/Post/Post";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/restaurant" element={<Restaurant />} />
           <Route path="/api" element={<APi />} />
+          <Route path="/post" element={<Post />} />
         </Routes>
 
         <Footer />

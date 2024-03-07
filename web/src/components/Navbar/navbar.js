@@ -21,6 +21,9 @@ export default function Navbar() {
       <Link to="/api" className="nav-link">
         Api
       </Link>
+      <Link to="/post" className="nav-link">
+        Post
+      </Link>
     </div>
   );
 }
